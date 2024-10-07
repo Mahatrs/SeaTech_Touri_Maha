@@ -6,6 +6,7 @@
 #include "timer.h"
 #include "PWM.h"
 
+
 int main (void){
     /***********************************************************************************************/
      //Initialisation oscillateur
@@ -17,7 +18,9 @@ int main (void){
     /***********************************************************************************************/
     InitIO();
     InitPWM();
-    PWMSetSpeed(50);
+    //PWMSetSpeed(-20, MOTEUR_DROIT);
+    //PWMSetSpeed(20, MOTEUR_GAUCHE);
+    
     InitTimer1();
     InitTimer23();
     
