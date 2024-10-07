@@ -4,7 +4,7 @@
 #include "Robot.h"
 #include "ToolBox.h"
 #define PWMPER 24.0
-unsigned char acceleration = 35;
+unsigned char acceleration = 5;
 
 void InitPWM(void) {
     PTCON2bits.PCLKDIV = 0b000; //Divide by 1

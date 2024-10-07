@@ -25,6 +25,7 @@ void InitTimer1(void) {
 void __attribute__((interrupt, no_auto_psv)) _T1Interrupt(void) {
     IFS0bits.T1IF = 0;
     PWMUpdateSpeed();
+    ADC1StartConversionSequence();
 }
 
 //Initialisation d?un timer 32 bits
