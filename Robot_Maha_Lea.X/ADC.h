@@ -13,4 +13,3 @@ void ADCClearConversionFinishedFlag(void);
 unsigned int * ADCGetResult(void);
 unsigned char ADCIsConversionFinished(void);
 #endif	/* ADC_H */
-
